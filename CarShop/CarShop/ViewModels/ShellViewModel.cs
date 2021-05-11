@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace CarShop.ViewModels {
     public class ShellViewModel : Conductor<object>, IHandle<Visibility>
@@ -15,6 +16,8 @@ namespace CarShop.ViewModels {
         private Car selectedCar;
         private BindableCollection<Car> cars = new BindableCollection<Car>();
         private string selectedSort;
+        private bool reversSort;
+        private int sliderValue = 800;
 
         public Dictionary<string, System.Action> Sort { get; set; } = new Dictionary<string, System.Action>();
         public string SelectedSort
@@ -53,7 +56,15 @@ namespace CarShop.ViewModels {
                 NotifyOfPropertyChange(() => IsBorderVis);
             }
         }
-        private bool reversSort;
+        public int SliderValue
+        {
+            get => sliderValue;
+            set
+            {
+                sliderValue = value;
+                NotifyOfPropertyChange(() => SliderValue);
+            }
+        }
 
         public bool ReversSort
         {
@@ -73,7 +84,6 @@ namespace CarShop.ViewModels {
             this.eventAggregator.Subscribe(this);
             ReadCars();
             InitializeSort();
-            
         }
 
         private void InitializeSort()
