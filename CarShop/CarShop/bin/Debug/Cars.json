@@ -1,0 +1,20 @@
+[
+  {
+    "Id": 2,
+    "Title": "Suzuki",
+    "Model": "Swift 8",
+    "Color": "Red",
+    "Year": 2020,
+    "Price": 520000.0,
+    "Image": "https://i.infocar.ua/i/12/6262/1200x800.jpg"
+  },
+  {
+    "Id": 1,
+    "Title": "Mazda",
+    "Model": "RX-7",
+    "Color": "Black",
+    "Year": 2021,
+    "Price": 300000.0,
+    "Image": "https://img5.goodfon.ru/wallpaper/nbig/3/65/avto-mashina-mazda-rx-7-rendering-mazda-rx7-mazda-rx-7-veh-1.jpg"
+  }
+]
