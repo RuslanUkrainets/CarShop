@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CarShop.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="320">
+             d:DesignHeight="470" d:DesignWidth="320">
     <Grid>
         <StackPanel>
             <StackPanel.Resources>
@@ -14,6 +14,7 @@
                 </Style>
                 <Style TargetType="TextBox">
                     <Setter Property="FontSize" Value="25"/>
+                    <Setter Property="Background" Value="{DynamicResource MaterialDesignCardBackground}"/>
                 </Style>
                 <Style TargetType="DockPanel">
                     <Setter Property="Margin" Value="10"/>
@@ -43,8 +44,8 @@
                 <Label Content="Image:"/>
                 <TextBox x:Name="Car_Image" Width="180" HorizontalAlignment="Right"/>
             </DockPanel>
-            <Button x:Name="Save" FontSize="30" Margin="5" Content="Save"/>
-            <Button x:Name="ClosePage" FontSize="30" Margin="5" Content="Close"/>
+            <Button x:Name="Save" Margin="5" Content="Save"/>
+            <Button x:Name="ClosePage" Margin="5" Content="Close"/>
         </StackPanel>
     </Grid>
 </UserControl>

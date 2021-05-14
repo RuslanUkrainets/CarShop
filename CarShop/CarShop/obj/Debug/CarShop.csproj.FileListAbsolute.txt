@@ -29,3 +29,9 @@ C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\C
 C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\obj\Debug\Views\AddCarView.baml
 C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\obj\Debug\Views\EditCarView.g.cs
 C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\obj\Debug\Views\EditCarView.baml
+C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\bin\Debug\MaterialDesignColors.dll
+C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\bin\Debug\MaterialDesignColors.pdb
+C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\torva\OneDrive\Programming\CSharp\WPF\FinalProjectWPF\CarShop\CarShop\CarShop\obj\Debug\FixStyle.baml

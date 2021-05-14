@@ -13,5 +13,22 @@ namespace CarShop
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            
+        }
+
+        public static void SwichTheme(MaterialDesignThemes.Wpf.BaseTheme theme)
+        {            
+            var res = Current.Resources.MergedDictionaries.FirstOrDefault(x => x.Source.ToString().Contains("Light") || x.Source.ToString().Contains("Dark"));
+            if (theme == MaterialDesignThemes.Wpf.BaseTheme.Dark)
+            {
+                res.Source = new Uri("pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml");
+            }
+            else if(theme == MaterialDesignThemes.Wpf.BaseTheme.Light)
+            {
+                res.Source = new Uri("pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml");
+            }
+        }
     }
 }
