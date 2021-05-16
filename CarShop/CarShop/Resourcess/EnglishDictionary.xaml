@@ -1,0 +1,26 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:str="clr-namespace:System;assembly=mscorlib">
+    <str:String x:Key="DId">Id:</str:String>
+    <str:String x:Key="DTitle">Title:</str:String>
+    <str:String x:Key="DModel">Model:</str:String>
+    <str:String x:Key="DColor">Color:</str:String>
+    <str:String x:Key="DYear">Year:</str:String>
+    <str:String x:Key="DPrice">Price:</str:String>
+    <str:String x:Key="DImage">Image:</str:String>    
+    <str:String x:Key="DAdd">Add</str:String>
+    <str:String x:Key="DEdit">Edit</str:String>
+    <str:String x:Key="DDelete">Delete</str:String>
+    <str:String x:Key="DSortBy">Sort By:</str:String>
+    <str:String x:Key="DRevers">Revers</str:String>
+    <str:String x:Key="DSize">Image Size:</str:String>
+    <str:String x:Key="DTheme">Theme:</str:String>
+    <str:String x:Key="DDark">Dark</str:String>
+    <str:String x:Key="DLight">Light</str:String>
+    <str:String x:Key="DSave">Save</str:String>
+    <str:String x:Key="DClose">Close</str:String>
+
+    <str:String x:Key="DLanguage">Language:</str:String>
+    <str:String x:Key="DEnglish">En</str:String>
+    <str:String x:Key="DRussian">Ru</str:String>
+</ResourceDictionary>

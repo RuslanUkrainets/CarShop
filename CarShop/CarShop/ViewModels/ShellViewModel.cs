@@ -88,36 +88,36 @@ namespace CarShop.ViewModels {
             selectedCarIndex = Cars.Count;
         }
 
-        public void EditCar()
+        public bool CanEditCar(Car selectedItem)
         {
-            if (SelectedCar == null) return;
-            IsBorderVis = Visibility.Visible;
-            ActivateItem(new EditCarViewModel(eventAggregator));
-            eventAggregator.PublishOnUIThread(SelectedCar);
-            eventAggregator.PublishOnUIThread(Cars);
-            selectedCarIndex = Cars.IndexOf(SelectedCar);
+            return selectedItem != null;
         }
 
-        public void DeleteCar()
+        public void EditCar(Car selectedItem)
         {
-            if (SelectedCar == null || Cars.Count == 0) return;
-            selectedCarIndex = Cars.IndexOf(SelectedCar);
-            Cars.Remove(SelectedCar);
-            if (Cars.Count == 0)
-            {
-                SelectedCar = null;
-            }
-            else if(selectedCarIndex == 0)
+            IsBorderVis = Visibility.Visible;
+            ActivateItem(new EditCarViewModel(eventAggregator));
+            eventAggregator.PublishOnUIThread(selectedCar);
+            eventAggregator.PublishOnUIThread(Cars);
+            selectedCarIndex = Cars.IndexOf(selectedCar);
+        }
+
+        public bool CanDeleteCar(Car selectedItem)
+        {
+            return selectedItem != null;
+        }
+
+        public void DeleteCar(Car selectedItem)
+        {
+            selectedCarIndex = Cars.IndexOf(selectedItem);
+            Cars.Remove(selectedCar);
+            if (selectedCarIndex != Cars.Count)
             {
                 SelectedCar = Cars[selectedCarIndex];
             }
-            else if (Cars[selectedCarIndex - 1] == Cars[Cars.Count - 1])
+            else if (Cars.Count != 0)
             {
                 SelectedCar = Cars[selectedCarIndex - 1];
-            }
-            else
-            {
-                SelectedCar = Cars[selectedCarIndex];
             }
         }       
 

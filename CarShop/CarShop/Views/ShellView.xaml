@@ -1,9 +1,9 @@
 <Window x:Class="CarShop.Views.ShellView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
-        xmlns:cal="clr-namespace:Caliburn.Micro;assembly=Caliburn.Micro"
-        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+        xmlns:cal="http://www.caliburnproject.org" 
         x:Name="MainWindow"
         Height="650" Width="1160"
         Title="CarShop"
@@ -35,26 +35,43 @@
             <DockPanel>
                 <Border>
                     <StackPanel Orientation="Horizontal">
-                        <Button x:Name="AddCar" Content="Add"/>
-                        <Button x:Name="EditCar" Content="Edit"/>
-                        <Button x:Name="DeleteCar" Content="Delete"/>
+                        <Button x:Name="AddCar" Content="{DynamicResource DAdd}"/>
+                        <Button Content="{DynamicResource DEdit}">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <cal:ActionMessage MethodName="EditCar">
+                                        <cal:Parameter Value="{Binding ElementName=Cars, Path=SelectedItem}"/>
+                                    </cal:ActionMessage>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Button>
+                        <Button Content="{DynamicResource DDelete}">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <cal:ActionMessage MethodName="DeleteCar">
+                                        <cal:Parameter Value="{Binding ElementName=Cars, Path=SelectedItem}"/>
+                                    </cal:ActionMessage>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </Button>
+                            
                     </StackPanel>
                 </Border>
 
                 <Border>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
-                        <Label Content="Sort by: "/>
+                        <Label Content="{DynamicResource DSortBy}"/>
                         <ComboBox Width="100" 
                                   x:Name="Sort_Keys" 
                                   SelectedItem="{Binding SelectedSort}" 
                                   Style="{DynamicResource MaterialDesignOutlinedComboBox}"
                                   VerticalAlignment="Center"/>
-                        <CheckBox x:Name="ReversSort" Content="Revers" VerticalAlignment="Center" Margin="10 0" Style="{DynamicResource MaterialDesignFilterChipOutlineCheckBox}"/>
+                        <CheckBox x:Name="ReversSort" Content="{DynamicResource DRevers}" VerticalAlignment="Center" Margin="10 0" Style="{DynamicResource MaterialDesignFilterChipOutlineCheckBox}"/>
                     </StackPanel>
                 </Border>
                 <Border>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
-                        <Label Content="Image Size:" />
+                        <Label Content="{DynamicResource DSize}" />
                         <Slider x:Name="SliderValue" Width="200" Maximum="1380" Minimum="100" Margin="10 0"
                             VerticalAlignment="Center"/>
                         <TextBlock Text="{Binding SliderValue}" Width="30" VerticalAlignment="Center"/>
@@ -62,7 +79,7 @@
                 </Border>
                 <Border>
                     <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
-                        <Label Content="Theme:"/>
+                        <Label Content="{DynamicResource DTheme}"/>
                         <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="5" Background="{x:Null}">
                             <StackPanel.Resources>
                                 <Style TargetType="{x:Type RadioButton}" BasedOn="{StaticResource MaterialDesignFlatPrimaryToggleButton}">
@@ -70,8 +87,23 @@
                                     <Setter Property="FontSize" Value="15"/>
                                 </Style>
                             </StackPanel.Resources>
-                            <RadioButton x:Name="DarkTheme" Content="Dark"/>
-                            <RadioButton x:Name="LightTheme" Content="Light"/>
+                            <RadioButton x:Name="DarkTheme" Content="{DynamicResource DDark}"/>
+                            <RadioButton x:Name="LightTheme" Content="{DynamicResource DLight}"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border>
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Stretch">
+                        <Label Content="{DynamicResource DLanguage}"/>
+                        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="5" Background="{x:Null}">
+                            <StackPanel.Resources>
+                                <Style TargetType="{x:Type RadioButton}" BasedOn="{StaticResource MaterialDesignFlatPrimaryToggleButton}">
+                                    <Setter Property="Height" Value="25"/>
+                                    <Setter Property="FontSize" Value="15"/>
+                                </Style>
+                            </StackPanel.Resources>
+                            <RadioButton x:Name="EnglishLanguage" Content="{DynamicResource DEnglish}"/>
+                            <RadioButton x:Name="RussianLanguage" Content="{DynamicResource DRussian}"/>
                         </StackPanel>
                     </StackPanel>
                 </Border>
@@ -97,23 +129,23 @@
                         </Border>
                         <StackPanel Margin="10 0 0 0">
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="Title: "/>
+                                <Label Content="{DynamicResource DTitle}"/>
                                 <TextBlock Text="{Binding Title}"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="Model: "/>
+                                <Label Content="{DynamicResource DModel}"/>
                                 <TextBlock Text="{Binding Model}"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="Color: "/>
+                                <Label Content="{DynamicResource DColor}"/>
                                 <TextBlock Text="{Binding Color}"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="Year: "/>
+                                <Label Content="{DynamicResource DYear}"/>
                                 <TextBlock Text="{Binding Year}"/>
                             </StackPanel>
                             <StackPanel Orientation="Horizontal">
-                                <Label Content="Price: "/>
+                                <Label Content="{DynamicResource DPrice}"/>
                                 <TextBlock Text="{Binding Price}"/>
                             </StackPanel>
                         </StackPanel>
@@ -150,27 +182,27 @@
                     <ColumnDefinition Width="130"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Orientation="Horizontal">
-                    <Label Content="Id:"/>
+                    <Label Content="{DynamicResource DId}"/>
                     <TextBlock x:Name="SelectedCar_Id"/>
                 </StackPanel>
                 <StackPanel Grid.Column="1" Orientation="Horizontal">
-                    <Label Content="Title:"/>
+                    <Label Content="{DynamicResource DTitle}"/>
                     <TextBlock x:Name="SelectedCar_Title"/>
                 </StackPanel>
                 <StackPanel Grid.Column="2" Orientation="Horizontal">
-                    <Label Content="Model:"/>
+                    <Label Content="{DynamicResource DModel}"/>
                     <TextBlock x:Name="SelectedCar_Model"/>
                 </StackPanel>
                 <StackPanel Grid.Column="3" Orientation="Horizontal">
-                    <Label Content="Color:"/>
+                    <Label Content="{DynamicResource DColor}"/>
                     <TextBlock x:Name="SelectedCar_Color"/>
                 </StackPanel>
                 <StackPanel Grid.Column="4" Orientation="Horizontal">
-                    <Label Content="Year:"/>
+                    <Label Content="{DynamicResource DYear}"/>
                     <TextBlock x:Name="SelectedCar_Year"/>
                 </StackPanel>
                 <StackPanel Grid.Column="5" Orientation="Horizontal">
-                    <Label Content="Price:"/>
+                    <Label Content="{DynamicResource DPrice}"/>
                     <TextBlock x:Name="SelectedCar_Price"/>
                 </StackPanel>
             </Grid>

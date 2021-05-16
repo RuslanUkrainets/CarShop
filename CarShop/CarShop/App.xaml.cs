@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarShop.Infrastructure;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -28,6 +29,19 @@ namespace CarShop
             else if(theme == MaterialDesignThemes.Wpf.BaseTheme.Light)
             {
                 res.Source = new Uri("pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml");
+            }
+        }
+
+        public static void SwichLanguage(Languages language)
+        {
+            var res = Current.Resources.MergedDictionaries.FirstOrDefault(x => x.Source.ToString().Contains("English") || x.Source.ToString().Contains("Russian"));
+            if (language == Languages.Russian)
+            {
+                res.Source = new Uri("pack://application:,,,/Resourcess/RussianDictionary.xaml");
+            }
+            else if (language == Languages.English)
+            {
+                res.Source = new Uri("pack://application:,,,/Resourcess/EnglishDictionary.xaml");
             }
         }
     }

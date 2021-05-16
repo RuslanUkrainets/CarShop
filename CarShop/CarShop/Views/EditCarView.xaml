@@ -21,31 +21,31 @@
                 </Style>
             </StackPanel.Resources>
             <DockPanel>
-                <Label Content="Title:"/>
+                <Label Content="{DynamicResource DTitle}"/>
                 <TextBox x:Name="Car_Title" Width="180" HorizontalAlignment="Right"/>
             </DockPanel>
             <DockPanel>
-                <Label Content="Model:"/>
+                <Label Content="{DynamicResource DModel}"/>
                 <TextBox x:Name="Car_Model" Width="180" HorizontalAlignment="Right"/>
             </DockPanel>
             <DockPanel>
-                <Label Content="Color:"/>
+                <Label Content="{DynamicResource DColor}"/>
                 <TextBox x:Name="Car_Color" Width="180" HorizontalAlignment="Right"/>
             </DockPanel>
             <DockPanel>
-                <Label Content="Year:"/>
+                <Label Content="{DynamicResource DYear}"/>
                 <TextBox x:Name="Car_Year" Width="180" HorizontalAlignment="Right"/>
             </DockPanel>
             <DockPanel>
-                <Label Content="Price:"/>
+                <Label Content="{DynamicResource DPrice}"/>
                 <TextBox x:Name="Car_Price" Width="180" HorizontalAlignment="Right"/>
             </DockPanel>
             <DockPanel>
-                <Label Content="Image:"/>
+                <Label Content="{DynamicResource DImage}"/>
                 <TextBox x:Name="Car_Image" Width="180" HorizontalAlignment="Right"/>
             </DockPanel>
-            <Button x:Name="Save" Margin="5" Content="Save"/>
-            <Button x:Name="ClosePage" Margin="5" Content="Close"/>
+            <Button x:Name="Save" Margin="5" Content="{DynamicResource DSave}"/>
+            <Button x:Name="ClosePage" Margin="5" Content="{DynamicResource DClose}"/>
         </StackPanel>
     </Grid>
 </UserControl>
