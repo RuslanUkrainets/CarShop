@@ -20,7 +20,7 @@
                     <Setter Property="Background" Value="{DynamicResource MaterialDesignCardBackground}"/>
                 </Style>
                 <Style TargetType="DockPanel">
-                    <Setter Property="Margin" Value="10"/>
+                    <Setter Property="Margin" Value="5 10 10 10"/>
                 </Style>
             </StackPanel.Resources>
             <DockPanel>

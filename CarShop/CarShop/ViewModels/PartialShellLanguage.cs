@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace CarShop.ViewModels
 {
@@ -39,6 +40,25 @@ namespace CarShop.ViewModels
                     File.WriteAllText("SelectedLanguage.txt", "russian");
                     NotifyOfPropertyChange(() => RussianLanguage);
                 }
+            }
+        }
+
+        private void InitializeLanguage()
+        {
+            SetLanguage();
+        }
+
+        private void SetLanguage()
+        {
+            try
+            {
+                var theme = File.ReadAllText("SelectedLanguage.txt");
+                if (theme == "russian") RussianLanguage = true;
+                else if (theme == "english") EnglishLanguage = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, ex.Source);
             }
         }
     }

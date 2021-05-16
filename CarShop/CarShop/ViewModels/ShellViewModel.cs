@@ -65,6 +65,7 @@ namespace CarShop.ViewModels {
             ReadCars();
             InitializeSort();
             InitializeTheme();
+            InitializeLanguage();
         }
 
 
@@ -126,6 +127,12 @@ namespace CarShop.ViewModels {
             IsBorderVis = message;
             if (selectedCarIndex <= Cars.Count - 1)
                 SelectedCar = Cars[selectedCarIndex];
-        }        
+        }
+
+        public override void CanClose(Action<bool> callback)
+        {
+            File.WriteAllText("Cars.json", JsonConvert.SerializeObject(cars, Formatting.Indented));
+            base.CanClose(callback);
+        }
     }
 }

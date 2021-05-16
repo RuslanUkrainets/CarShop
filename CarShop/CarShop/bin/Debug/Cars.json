@@ -1,28 +1,19 @@
 [
   {
-    "Id": 2,
-    "Title": "Suzuki",
-    "Model": "Swift 8",
-    "Color": "Red",
-    "Year": 2020,
-    "Price": 52.0,
-    "Image": "https://i.infocar.ua/i/12/6262/1200x800.jpg"
-  },
-  {
-    "Id": 1,
-    "Title": "Mazda",
-    "Model": "RX-7",
-    "Color": "Black",
+    "Id": 5,
+    "Title": "Toyota",
+    "Model": "Camry",
+    "Color": "Gray",
     "Year": 2021,
-    "Price": 300000.0,
-    "Image": "https://img5.goodfon.ru/wallpaper/nbig/3/65/avto-mashina-mazda-rx-7-rendering-mazda-rx7-mazda-rx-7-veh-1.jpg"
+    "Price": 540000.0,
+    "Image": "https://s0.rbk.ru/v6_top_pics/media/img/1/88/755948825610881.jpg"
   },
   {
     "Id": 3,
     "Title": "Mitsubishi",
     "Model": "Outlander",
     "Color": "Grey",
-    "Year": 2,
+    "Year": 2020,
     "Price": 600000.0,
     "Image": "https://cdn.riastatic.com/photosnewr/ria/news_common/test-drajv-mitsubishi-outlander-dlya-skromnoj-takoj-kompanii__249690-2560x1600.jpg"
   },
@@ -36,21 +27,21 @@
     "Image": "https://auto.ironhorse.ru/wp-content/uploads/2015/09/pajero-4-old1.jpg"
   },
   {
-    "Id": 5,
-    "Title": "Toyota",
-    "Model": "Camry",
-    "Color": "Gray",
-    "Year": 2021,
-    "Price": 540000.0,
-    "Image": "https://s0.rbk.ru/v6_top_pics/media/img/1/88/755948825610881.jpg"
+    "Id": 1,
+    "Title": "Mazda",
+    "Model": "RX-7",
+    "Color": "Black",
+    "Year": 3000,
+    "Price": 300000.0,
+    "Image": "https://img5.goodfon.ru/wallpaper/nbig/3/65/avto-mashina-mazda-rx-7-rendering-mazda-rx7-mazda-rx-7-veh-1.jpg"
   },
   {
-    "Id": 6,
-    "Title": "1",
-    "Model": "1",
-    "Color": "1",
-    "Year": 1,
-    "Price": 2.0,
-    "Image": "C:\\Users\\torva\\OneDrive\\Programming\\ticket.jpg"
+    "Id": 2,
+    "Title": "Suzuki",
+    "Model": "Swift 8",
+    "Color": "Red",
+    "Year": 2020,
+    "Price": 52.0,
+    "Image": "https://i.infocar.ua/i/12/6262/1200x800.jpg"
   }
 ]

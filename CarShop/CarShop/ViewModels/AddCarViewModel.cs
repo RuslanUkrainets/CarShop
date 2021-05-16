@@ -29,7 +29,6 @@ namespace CarShop.ViewModels
         {
             Car.Id = IdGenerator.GetId(cars);
             cars.Add(Car);
-            File.WriteAllText("Cars.json", JsonConvert.SerializeObject(cars, Formatting.Indented));
             ClosePage();
         }
 

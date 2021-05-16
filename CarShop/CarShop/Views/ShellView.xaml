@@ -30,6 +30,7 @@
                 </Style>
                 <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignFloatingActionMiniButton}">
                     <Setter Property="Margin" Value="3"/>
+                    <Setter Property="Height" Value="35"/>
                 </Style>
             </ToolBar.Resources>
             <DockPanel>
@@ -170,16 +171,16 @@
                 <Grid.Resources>
                     <Style TargetType="TextBlock">
                         <Setter Property="VerticalAlignment" Value="Center"/>
-                        <Setter Property="Margin" Value="10 0"/>
+                        <Setter Property="Margin" Value="2 0 "/>
                     </Style>
                 </Grid.Resources>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="130"/>
-                    <ColumnDefinition Width="130"/>
-                    <ColumnDefinition Width="130"/>
-                    <ColumnDefinition Width="130"/>
-                    <ColumnDefinition Width="130"/>
-                    <ColumnDefinition Width="130"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
                 </Grid.ColumnDefinitions>
                 <StackPanel Grid.Column="0" Orientation="Horizontal">
                     <Label Content="{DynamicResource DId}"/>

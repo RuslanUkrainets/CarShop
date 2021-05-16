@@ -39,7 +39,6 @@ namespace CarShop.ViewModels
             int indexCar = cars.IndexOf(oldCar);
             cars.RemoveAt(indexCar);
             cars.Insert(indexCar, newCar);
-            File.WriteAllText("Cars.json", JsonConvert.SerializeObject(cars, Formatting.Indented));
             ClosePage();
         }
 

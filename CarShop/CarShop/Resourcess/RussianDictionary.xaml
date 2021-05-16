@@ -7,19 +7,18 @@
     <str:String x:Key="DColor">Цвет:</str:String>
     <str:String x:Key="DYear">Год:</str:String>
     <str:String x:Key="DPrice">Цена:</str:String>
-    <str:String x:Key="DImage">Изображение:</str:String>
-    <str:String x:Key="DAdd">Добавить</str:String>
-    <str:String x:Key="DEdit">Редактировать</str:String>
-    <str:String x:Key="DDelete">Удалить</str:String>
+    <str:String x:Key="DImage">Изображ:</str:String>
+    <str:String x:Key="DAdd">Добав.</str:String>
+    <str:String x:Key="DEdit">Редакт.</str:String>
+    <str:String x:Key="DDelete">Удал.</str:String>
     <str:String x:Key="DSortBy">Сортировать:</str:String>
     <str:String x:Key="DRevers">Реверс</str:String>
     <str:String x:Key="DSize">Размер:</str:String>
     <str:String x:Key="DTheme">Тема:</str:String>
-    <str:String x:Key="DDark">Тёмная</str:String>
-    <str:String x:Key="DLight">Светлая</str:String>
+    <str:String x:Key="DDark">Тьма</str:String>
+    <str:String x:Key="DLight">Свет</str:String>
     <str:String x:Key="DSave">Сохранить</str:String>
     <str:String x:Key="DClose">Закрыть</str:String>
-
     <str:String x:Key="DLanguage">Язык:</str:String>
     <str:String x:Key="DEnglish">Анг</str:String>
     <str:String x:Key="DRussian">Рус</str:String>
