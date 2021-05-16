@@ -1,47 +1,65 @@
 [
   {
-    "Id": 5,
-    "Title": "Toyota",
-    "Model": "Camry",
-    "Color": "Gray",
-    "Year": 2021,
-    "Price": 540000.0,
-    "Image": "https://s0.rbk.ru/v6_top_pics/media/img/1/88/755948825610881.jpg"
-  },
-  {
-    "Id": 3,
-    "Title": "Mitsubishi",
-    "Model": "Outlander",
-    "Color": "Grey",
-    "Year": 2020,
-    "Price": 600000.0,
-    "Image": "https://cdn.riastatic.com/photosnewr/ria/news_common/test-drajv-mitsubishi-outlander-dlya-skromnoj-takoj-kompanii__249690-2560x1600.jpg"
-  },
-  {
-    "Id": 4,
-    "Title": "Mitsubishi",
-    "Model": "Pajero",
-    "Color": "Black",
-    "Year": 2021,
-    "Price": 55.0,
-    "Image": "https://auto.ironhorse.ru/wp-content/uploads/2015/09/pajero-4-old1.jpg"
-  },
-  {
     "Id": 1,
-    "Title": "Mazda",
-    "Model": "RX-7",
-    "Color": "Black",
-    "Year": 3000,
-    "Price": 300000.0,
-    "Image": "https://img5.goodfon.ru/wallpaper/nbig/3/65/avto-mashina-mazda-rx-7-rendering-mazda-rx7-mazda-rx-7-veh-1.jpg"
+    "Title": "Porsche",
+    "Model": "Panamera",
+    "Color": "Gray",
+    "Year": 2019,
+    "Price": 151000.0,
+    "Image": "https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/porsche-panamera__936280-1920x1080x90.webp"
   },
   {
     "Id": 2,
-    "Title": "Suzuki",
-    "Model": "Swift 8",
+    "Title": "Mazda",
+    "Model": "Cx-5",
+    "Color": "White",
+    "Year": 2018,
+    "Price": 32000.0,
+    "Image": "https://cdn2.riastatic.com/photosnew/auto/photo/mazda_cx-5__388857392fx.webp"
+  },
+  {
+    "Id": 3,
+    "Title": "Audi",
+    "Model": "Q5",
+    "Color": "White",
+    "Year": 2020,
+    "Price": 72000.0,
+    "Image": "https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/audi-q5__1193336-1920x1080x90.webp"
+  },
+  {
+    "Id": 4,
+    "Title": "Honda",
+    "Model": "Civic",
+    "Color": "Black",
+    "Year": 2012,
+    "Price": 10200.0,
+    "Image": "https://cdn4.riastatic.com/photosnew/auto/photo/honda_civic__388204059fx.webp"
+  },
+  {
+    "Id": 5,
+    "Title": "Honda",
+    "Model": "HR-V",
     "Color": "Red",
     "Year": 2020,
-    "Price": 52.0,
-    "Image": "https://i.infocar.ua/i/12/6262/1200x800.jpg"
+    "Price": 28000.0,
+    "Image": "https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/honda-hr-v__782981-1920x1080x90.webp"
+  },
+  {
+    "Id": 6,
+    "Title": "Honda",
+    "Model": "Accord",
+    "Color": "Black",
+    "Year": 2014,
+    "Price": 13000.0,
+    "Image": "https://cdn4.riastatic.com/photosnew/auto/photo/honda_accord__392436534fx.webp"
+  },
+  {
+    "Id": 7,
+    "Title": "Lexus",
+    "Model": "LC 500 AT",
+    "Color": "Green",
+    "Year": 2021,
+    "Price": 95000.0,
+    "Image": "https://cdn.riastatic.com/photosnewr/auto/new_auto_storage/lexus-lc__1136643-1920x1080x90.webp"
   }
 ]

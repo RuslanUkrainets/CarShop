@@ -30,7 +30,7 @@
                 </Style>
                 <Style TargetType="{x:Type Button}" BasedOn="{StaticResource MaterialDesignFloatingActionMiniButton}">
                     <Setter Property="Margin" Value="3"/>
-                    <Setter Property="Height" Value="35"/>
+                    <Setter Property="Height" Value="40"/>
                 </Style>
             </ToolBar.Resources>
             <DockPanel>
